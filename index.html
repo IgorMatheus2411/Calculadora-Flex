@@ -6,7 +6,7 @@
     <title>Calculadora Flex</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./img/icon-bombaGasolina.png">
-    
+
 
 </head>
 <body>
@@ -39,15 +39,15 @@
                     
                     <div class="divBody">
                         <div class="divEtanol">
-                            <label for="labelM">&nbsp; &nbsp;Álcool (preço por litro) </label>
+                            <label for="label   ">&nbsp; &nbsp;Álcool (preço por litro) </label>
                             <label for="label" id="Mbl">Álcool </label>
-                            <input type="number" id="inputEta"  size="8" placeholder="R$0,00"  name="txtEtanol">
+                            <input type="text" id="inputEta" size="8" oninput="formatarMoeda(this)" value="R$0,00"  name="txtEtanol">
                         </div>
                         
                         <div class="divGasolina">
                             <label for="label"> &nbsp; &nbsp;Gasolina (preço por litro) </label>
                             <label for="label" id="Mbl">Gasolina  </label>
-                            <input type="number" id="inputGaso" placeholder="R$0,00" size="8" name="txtGasolina">
+                            <input type="text" id="inputGaso" oninput="formatarMoeda(this)" value="R$0,00" size="8" name="txtGasolina">
                         </div>
 
                         <div class="divCalcular">
