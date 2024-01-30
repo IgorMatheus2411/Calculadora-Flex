@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Flex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/icon-bombaGasolina.png">
+    
+
+</head>
+<body>
+<div class="content">
+    
+    <!-- <img src="img/neutro.png" alt="Calculadora Flex" id="status"> -->
+    <h1>Álcool X Gasolina</h1>
+
+
+    <div class="divExplica">
+        <h4>
+        <p style="color: darkgreen;">Quando vale a pena usar um combustível ou outro?</p> <br>
+        <br>
+        A principal diferença entre os dois combustíveis está na proporção entre o preço e o desempenho de cada um. 
+        Esta calculadora compara o preço do litro do álcool e da gasolina e mostra qual é o combustível mais vantajoso, financeiramente, no momento. <br>
+        <br>
+        O etanol vale a pena quando custar <p>até 70%</p> do valor da gasolina. <br>
+        <br>
+        <p> 
+        Preencha os campos abaixo com os preços dos combustíveis </p>que você encontra hoje nos postos e clique no botão “calcular” para saber qual é a melhor opção.
+    </h4>
+    </div>
+
+    <div class="divForm">
+        
+            <form name="frmFlex" action="">
+                <div class="divElementos">
+                    <img class="img-bomba" src="img/icon-bombaGasolina.png" alt="bombaGasolina">
+                    <div class="divh1"><h1>Qual a melhor opção?</h1></div>
+                    
+                    <div class="divBody">
+                        <div class="divEtanol">
+                            <label for="labelM">&nbsp; &nbsp;Álcool (preço por litro) </label>
+                            <label for="label" id="Mbl">Álcool </label>
+                            <input type="number" id="inputEta"  size="8" placeholder="R$0,00"  name="txtEtanol">
+                        </div>
+                        
+                        <div class="divGasolina">
+                            <label for="label"> &nbsp; &nbsp;Gasolina (preço por litro) </label>
+                            <label for="label" id="Mbl">Gasolina  </label>
+                            <input type="number" id="inputGaso" placeholder="R$0,00" size="8" name="txtGasolina">
+                        </div>
+
+                        <div class="divCalcular">
+                            <input class="buttonCalc" type="button" value="Calcular" onclick="calcular()">
+                        </div>
+
+                        
+                    </div>
+                    
+                
+                </div>  
+                
+
+            </form>
+    </div>
+
+    <div id="resultGasolina">Vale mais apena usar Gasolina!</div>
+    <div id="resultAlcool">Vale mais apena usar Álcool</div>
+    <div id="resultCalc">
+        <p><strong>Entenda como o cálculo é feito</strong></p>
+        <p>Dividimos o valor do litro do álcool pelo da gasolina.</p>
+        <p>Quando o resultado é menor que 0,7, a recomendação é 
+        abastecer com álcool. Se maior, a recomendação é escolher a gasolina. </p>
+        <p>Exemplo: se o álcool custa R$ 3,29 e a gasolina R$ 4,92, o resultado da divisão do primeiro pelo segundo é 0,67, menor que 0,7. Portanto, é mais vantajoso abastecer com álcool.</p>
+    </div>
+   <span>‎ </span>
+
+    <script src="script.js"></script>
+</body>
+</html>
